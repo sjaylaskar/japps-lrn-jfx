@@ -70,9 +70,8 @@ public final class LrnJfxApp extends Application implements Loggable {
         Loggable.log(Loggable.getLogger(LrnJfxApp.class), LINFO, "App launch start.");
         try {
             launch();
-            throw new RuntimeException("Oh testing it out");
         } catch (final Exception exception) {
-            Loggable.log(Loggable.getLogger(LrnJfxApp.class), LERROR, ExceptionUtils.getStackTrace(exception));
+            Loggable.log(Loggable.getLogger(LrnJfxApp.class), LFATAL, ExceptionUtils.getStackTrace(exception));
         } finally {
             Loggable.log(Loggable.getLogger(LrnJfxApp.class), LINFO, "App end.");
         }

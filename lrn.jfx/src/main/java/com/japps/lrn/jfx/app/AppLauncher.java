@@ -21,7 +21,6 @@ public final class AppLauncher {
     public static void main(final String... args) {
 
         LrnJfxApp.execute();
-        throw new RuntimeException("Oh testing it out");
     }
 
 }
